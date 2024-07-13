@@ -63,7 +63,7 @@ header .page-nav p {
   font-size: 11px;
 }
 header .page-nav p a {
-  list-style: none;
+  text-decoration: none;
   color: #1558D6;
 }
 

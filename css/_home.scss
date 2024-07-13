@@ -63,7 +63,7 @@ header{
             display: inline;
             font-size: 11px;
             & a{
-                list-style: none;
+                text-decoration: none;
                 color: $cLink;
             }
         }
