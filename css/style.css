@@ -1,0 +1,72 @@
+.visible-pc {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .visible-pc {
+    display: block;
+  }
+}
+
+header {
+  height: 117px;
+  padding: 0 30px;
+}
+@media screen and (min-width: 720px) {
+  header {
+    height: 151px;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
+header .head {
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+  margin-bottom: 21px;
+}
+@media screen and (min-width: 720px) {
+  header .head {
+    justify-content: space-between;
+    padding-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+header .head h1 .logo {
+  height: 34px;
+}
+@media screen and (min-width: 720px) {
+  header .head h1 .logo {
+    height: 45px;
+  }
+}
+header .head .staff {
+  position: relative;
+  padding: 12px 81px;
+  background-color: #1DDB07;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+header .head .staff::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 234px;
+  height: 39px;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+header .page-nav p {
+  display: inline;
+  font-size: 11px;
+}
+header .page-nav p a {
+  list-style: none;
+  color: #1558D6;
+}
+
+main .mainvisual .mv {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
