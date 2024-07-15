@@ -277,3 +277,76 @@ main{
         }
     }
 }
+
+footer{
+    background-color: $cBg;
+    padding-bottom: 30px;
+    & .container{
+        display: flex;
+        flex-direction: column;
+        padding: 38px 30px 0 30px;
+
+        @media screen and (min-width:$breakpoint) {
+            max-width: $contentMaxWidth;
+            margin: 0 auto;
+            padding-top: 49px;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        & .link{
+            margin-bottom: 25px;
+
+            &__top, &__bottom{
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                &__item{
+                    width: 120px;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    
+                    &:first-child{
+                        margin-right: 5px;
+                    }
+                    &:last-child{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &__top {
+                &__item{
+                    margin-bottom: 10px;
+                }
+            }
+    
+
+        }
+
+        & .about{
+            margin-bottom: 35px;
+
+            & .company{
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 17px;
+            }
+
+            & .address{
+                font-size: 12px;
+            }
+        }
+    }
+    & .copy{
+        padding: 0 30px;
+        font-size: 12px;
+        @media screen and (min-width:$breakpoint) {
+            max-width: $contentMaxWidth;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}

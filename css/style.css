@@ -262,4 +262,69 @@ main .introduction__next::after {
   main .banner__item:nth-child(n+4) {
     margin-bottom: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+footer {
+  background-color: #F5F5F5;
+  padding-bottom: 30px;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 30px 0 30px;
+}
+@media screen and (min-width: 720px) {
+  footer .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 49px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+footer .container .link {
+  margin-bottom: 25px;
+}
+footer .container .link__top, footer .container .link__bottom {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .container .link__top__item, footer .container .link__bottom__item {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+footer .container .link__top__item:first-child, footer .container .link__bottom__item:first-child {
+  margin-right: 5px;
+}
+footer .container .link__top__item:last-child, footer .container .link__bottom__item:last-child {
+  margin-left: 5px;
+}
+footer .container .link__top__item {
+  margin-bottom: 10px;
+}
+footer .container .about {
+  margin-bottom: 35px;
+}
+footer .container .about .company {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+footer .container .about .address {
+  font-size: 12px;
+}
+footer .copy {
+  padding: 0 30px;
+  font-size: 12px;
+}
+@media screen and (min-width: 720px) {
+  footer .copy {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
