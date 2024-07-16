@@ -1,0 +1,11 @@
+@use "globals/variables" as *;
+@use "parts/common" as *;
+
+.stafflist{
+    & h2{
+        margin-bottom: 43px;
+        @media screen and (min-width:$breakpoint) {
+            margin-bottom: 82px;
+        }
+    }
+}

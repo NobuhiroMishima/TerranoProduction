@@ -7,13 +7,17 @@
   }
 }
 
-.fade {
-  transition: all 0.5s ease;
-  -o-object-fit: cover;
-     object-fit: cover;
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 24px;
 }
-.fade:hover {
-  opacity: 0.4;
+@media screen and (min-width: 720px) {
+  h2 {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
 }
 
 header {
@@ -77,49 +81,27 @@ header .page-nav p a {
   color: #1558D6;
 }
 
-main .mainvisual .mv {
-  width: 100%;
-}
-@media screen and (min-width: 720px) {
-  main .mainvisual .mv {
-    height: 500px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-main .introduction {
+.introduction, .stafflist {
   margin: 43px 0 83px 0;
   padding: 0 30px;
 }
 @media screen and (min-width: 720px) {
-  main .introduction {
+  .introduction, .stafflist {
     max-width: 1080px;
     margin: 69px auto 126px auto;
   }
 }
-main .introduction h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333333;
-  margin-bottom: 24px;
-}
-@media screen and (min-width: 720px) {
-  main .introduction h2 {
-    font-size: 36px;
-    margin-bottom: 28px;
-  }
-}
-main .introduction__lead {
+.introduction__lead, .stafflist__lead {
   font-size: 13px;
   color: #333333;
   margin-bottom: 83px;
 }
 @media screen and (min-width: 720px) {
-  main .introduction__lead {
+  .introduction__lead, .stafflist__lead {
     margin-bottom: 98px;
   }
 }
-main .introduction__container {
+.introduction__container, .stafflist__container {
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -128,29 +110,29 @@ main .introduction__container {
   margin: 0 24px 83px 24px;
 }
 @media screen and (min-width: 720px) {
-  main .introduction__container {
+  .introduction__container, .stafflist__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 65px;
   }
 }
-main .introduction__container .item {
+.introduction__container .item, .stafflist__container .item {
   margin-bottom: 36px;
 }
-main .introduction__container .item:last-child {
+.introduction__container .item:last-child, .stafflist__container .item:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 720px) {
-  main .introduction__container .item {
+  .introduction__container .item, .stafflist__container .item {
     width: 28%;
     margin-bottom: 72px;
   }
-  main .introduction__container .item:nth-child(n+4) {
+  .introduction__container .item:nth-last-child(-n+3), .stafflist__container .item:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
 }
-main .introduction__container .item.new .item__name::before {
+.introduction__container .item.new .item__name::before, .stafflist__container .item.new .item__name::before {
   content: "NEW";
   position: absolute;
   top: -24px;
@@ -162,7 +144,7 @@ main .introduction__container .item.new .item__name::before {
   border-radius: 50%;
   font-size: 7px;
 }
-main .introduction__container .item__img {
+.introduction__container .item__img, .stafflist__container .item__img {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -171,34 +153,34 @@ main .introduction__container .item__img {
   margin: 0 auto 37px auto;
   border-radius: 50%;
 }
-main .introduction__container .item__img .image {
+.introduction__container .item__img .image, .stafflist__container .item__img .image {
   border-radius: 50%;
   border: 10px solid #F1F1F1;
 }
-main .introduction__container .item__name {
+.introduction__container .item__name, .stafflist__container .item__name {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
   margin-bottom: 3px;
   position: relative;
 }
-main .introduction__container .item__date {
+.introduction__container .item__date, .stafflist__container .item__date {
   font-size: 11px;
   color: #333333;
   margin-bottom: 8px;
 }
-main .introduction__container .item__interview {
+.introduction__container .item__interview, .stafflist__container .item__interview {
   font-size: 13px;
   color: #333333;
   margin-bottom: 13px;
 }
-main .introduction__container .item__next {
+.introduction__container .item__next, .stafflist__container .item__next {
   position: relative;
   font-size: 13px;
   text-decoration: none;
   color: #333333;
 }
-main .introduction__container .item__next::before {
+.introduction__container .item__next::before, .stafflist__container .item__next::before {
   content: "";
   position: absolute;
   bottom: 6px;
@@ -207,7 +189,7 @@ main .introduction__container .item__next::before {
   height: 1px;
   background-color: #707070;
 }
-main .introduction__container .item__next::after {
+.introduction__container .item__next::after, .stafflist__container .item__next::after {
   content: "";
   position: absolute;
   bottom: 6px;
@@ -218,7 +200,7 @@ main .introduction__container .item__next::after {
   transform-origin: right;
   background-color: #707070;
 }
-main .introduction__next {
+.introduction__next, .stafflist__next {
   display: block;
   position: relative;
   width: 240px;
@@ -231,7 +213,7 @@ main .introduction__next {
   padding: 12px 0 12px 44px;
   margin: 0 auto;
 }
-main .introduction__next::before {
+.introduction__next::before, .stafflist__next::before {
   content: "";
   position: absolute;
   bottom: 22px;
@@ -240,7 +222,7 @@ main .introduction__next::before {
   height: 1px;
   background-color: white;
 }
-main .introduction__next::after {
+.introduction__next::after, .stafflist__next::after {
   content: "";
   position: absolute;
   bottom: 22px;
@@ -250,6 +232,26 @@ main .introduction__next::after {
   transform: rotate(35deg);
   transform-origin: right;
   background-color: white;
+}
+
+.fade {
+  transition: all 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fade:hover {
+  opacity: 0.4;
+}
+
+main .mainvisual .mv {
+  width: 100%;
+}
+@media screen and (min-width: 720px) {
+  main .mainvisual .mv {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (min-width: 720px) {
   main .banner {
@@ -343,5 +345,14 @@ footer .copy {
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+.stafflist h2 {
+  margin-bottom: 43px;
+}
+@media screen and (min-width: 720px) {
+  .stafflist h2 {
+    margin-bottom: 82px;
   }
 }
