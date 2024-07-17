@@ -1,5 +1,5 @@
-@use "globals/variables" as *;
-@use "parts/common" as *;
+@use "../globals/variables" as *;
+@use "../parts/common" as *;
 
 main{
     & .stafflist{

@@ -1,2 +1,5 @@
-@use "staff";
-@use "stafflist";
+@use "parts/header";
+@use "parts/footer";
+
+@use "pages/staff";
+@use "pages/stafflist";

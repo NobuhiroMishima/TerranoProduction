@@ -1,28 +1,4 @@
-@use "globals/variables" as *;
-@use "parts/common" as *;
-
-
-
-.fade{
-    transition: all 0.5s ease;
-    object-fit: cover;
-    &:hover{
-        opacity: 0.4;
-    }
-}
-
-
-main{
-    & .mainvisual{
-        & .mv{
-            width: 100%;
-            @media screen and (min-width:$breakpoint) {
-                height: 500px;
-                object-fit: cover;
-            }
-        }
-    }
-}
+@use "../globals/variables" as *;
 
 footer{
     background-color: $cBg;
