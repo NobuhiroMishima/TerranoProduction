@@ -443,3 +443,51 @@ main .pagenation .pagelink {
   text-decoration: none;
   color: #333333;
 }
+
+#container {
+  margin-top: 14px;
+  padding: 0 30px;
+}
+@media screen and (min-width: 720px) {
+  #container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+#container .detail {
+  margin-bottom: 72px;
+}
+#container .detail__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+#container .detail__img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  border: 10px solid #F1F1F1;
+  margin: 0 auto;
+}
+#container .detail__date {
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: #333333;
+}
+#container .detail__icon-link {
+  display: flex;
+}
+#container .detail__icon-link .icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 32px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  text-align: center;
+  align-items: bottom;
+  color: #333333;
+  margin-right: 4px;
+}
