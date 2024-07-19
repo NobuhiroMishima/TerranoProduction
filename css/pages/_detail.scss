@@ -2,53 +2,138 @@
 @use "../parts/common" as *;
 
 #container{
-    margin-top: 14px;
+    margin: 14px 0 113px 0;
     padding: 0 30px;
     @media screen and (min-width:$breakpoint) {
         max-width: $contentMaxWidth;
-        margin: 0 auto;
+        margin: 63px auto 68px auto;
+        display: flex;
+        justify-content: space-between;
     }
 
-    & .detail{
-        margin-bottom: 72px;
-        
-        &__title{
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 32px;
+    & .main{
+        @media screen and (min-width:$breakpoint) {
+            width: 62.5%;
         }
-
-        &__img{
-            width: 210px;
-            height: 210px;
-            border-radius: 50%;
-            border: 10px solid $cBorder;
-            margin: 0 auto;
-        }
-
-        &__date{
-            margin-bottom: 8px;
-            font-size: 11px;
-            color: $cBlack;
-        }
-
-        &__icon-link{
-            display: flex;
-
-            & .icon{
-                display: block;
-                width: 32px;
-                height: 32px;
-                font-size: 16px;
-                text-decoration: none;
-                line-height: 32px;
+        & .detail{
+            margin-bottom: 72px;
+            
+            &__title{
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 32px;
+                @media screen and (min-width:$breakpoint) {
+                    font-size: 36px;
+                    margin-bottom: 48px;
+                }
+            }
+    
+            &__img{
+                width: 210px;
+                height: 210px;
                 border-radius: 50%;
-                border: 1px solid $cArrow;
-                text-align: center;
-                align-items: bottom;
+                border: 10px solid $cBorder;
+                margin: 0 auto 32px auto;
+                @media screen and (min-width:$breakpoint) {
+                    margin-bottom: 25px;
+                }
+            }
+    
+            &__date{
+                margin-bottom: 8px;
+                font-size: 11px;
                 color: $cBlack;
-                margin-right: 4px;
+            }
+    
+            &__icon-link{
+                display: flex;
+    
+                & .icon{
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    border: 1px solid $cArrow;
+                    text-align: center;
+                    align-items: bottom;
+                    color: $cBlack;
+                    margin-right: 4px;
+                }
+            }
+        }
+    
+        & .topic{
+            margin-bottom: 50px;
+            @media screen and (min-width:$breakpoint) {
+                margin-bottom: 77px;
+            }
+    
+            &__title{
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 25px;
+                color: $cBlack;
+                @media screen and (min-width:$breakpoint) {
+                    margin-bottom: 32px;
+                }
+            }
+    
+            &__img{
+                width: 100%;
+                border-radius: 20px;
+                margin-bottom: 24px;
+                @media screen and (min-width:$breakpoint) {
+                    width: 274px;
+                    height: 189px;
+
+                    &.right{
+                        float: right;
+                        margin: 0 0 30px 30px; 
+                    }
+
+                    &.left{
+                        float: left;
+                        margin: 0 30px 30px 0; 
+                    }
+
+                }
+            }
+    
+            &__body{
+                font-size: 13px;
+                color: $cBlack;
+                line-height: 26px;
+    
+            }
+        }
+    
+        & .omit{
+            margin-bottom: 59px;
+            @media screen and (min-width:$breakpoint) {
+                margin-bottom: 44px;
+            }
+            & .dot{
+                color: $cBlack;
+                display: block;
+                writing-mode: vertical-rl;
+                margin: 0 auto;
+            }
+        }
+        & .go_staffList{
+            margin-bottom: 48px;
+            @media screen and (min-width:$breakpoint) {
+                margin-bottom: 60px;
             }
         }
     }
+
+    & .side{
+        width: 25.3%;
+    }
+
+
+
 }
