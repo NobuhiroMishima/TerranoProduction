@@ -132,6 +132,61 @@
 
     & .side{
         width: 25.3%;
+
+        & h3{
+            font-size: 24px;
+            font-weight: bold;
+            color: $cBlack;
+            margin-bottom: 16px;
+        }
+
+        & .interview{
+            list-style: none;
+            padding-left: 0;
+
+            &__staff{
+                & .item{
+                    display: block;
+                    padding: 22px 0;
+                    border-top: 1px dashed $cDashed;
+
+                    & article{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                &:last-of-type{
+
+                    & .item{
+                        border-bottom: 1px dashed $cDashed;
+                    }
+                }
+            }
+
+            &__img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid $cBorder;
+                margin-right: 10px;
+            }
+
+            &__body{
+                flex-basis: auto;
+                flex-grow: 1;
+            }
+
+            &__name{
+                font-size: 13px;
+                color: $cBlack;
+            }
+            &__date{
+                font-size: 11px;
+                color: $cBlack;
+            }
+
+
+        }
     }
 
 

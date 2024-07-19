@@ -580,3 +580,44 @@ main .stafflist__container {
 #container .side {
   width: 25.3%;
 }
+#container .side h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16px;
+}
+#container .side .interview {
+  list-style: none;
+  padding-left: 0;
+}
+#container .side .interview__staff .item {
+  display: block;
+  padding: 22px 0;
+  border-top: 1px dashed #727272;
+}
+#container .side .interview__staff .item article {
+  display: flex;
+  align-items: center;
+}
+#container .side .interview__staff:last-of-type .item {
+  border-bottom: 1px dashed #727272;
+}
+#container .side .interview__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #F1F1F1;
+  margin-right: 10px;
+}
+#container .side .interview__body {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+#container .side .interview__name {
+  font-size: 13px;
+  color: #333333;
+}
+#container .side .interview__date {
+  font-size: 11px;
+  color: #333333;
+}
