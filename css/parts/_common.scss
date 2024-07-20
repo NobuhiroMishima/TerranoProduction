@@ -1,5 +1,9 @@
 @use "../globals/variables" as *;
 
+body{
+    font-family: 'メイリオ', sans-serif;
+}
+
 .visible-pc{
     display: none;
     @media screen and (min-width:$breakpoint) {

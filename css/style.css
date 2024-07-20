@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   height: 117px;
   padding: 0 30px;
@@ -248,6 +249,10 @@ footer .copy {
     margin: 0 auto;
     text-align: center;
   }
+}
+
+body {
+  font-family: "メイリオ", sans-serif;
 }
 
 .visible-pc {
