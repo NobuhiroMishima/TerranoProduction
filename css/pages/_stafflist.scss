@@ -3,7 +3,10 @@
 
 main{
     & .stafflist{
+        margin-top: 26px;
+        margin-bottom: 113px;
         @media screen and (min-width:$breakpoint) {
+            margin-top: 51px;
             margin-bottom: 111px;
         }
         & h2{

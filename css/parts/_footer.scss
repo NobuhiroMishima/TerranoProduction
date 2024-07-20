@@ -17,7 +17,7 @@ footer{
         }
 
         & .link{
-            margin-bottom: 25px;
+            margin-bottom: 15px;
 
             &__top, &__bottom{
                 list-style: none;
@@ -50,21 +50,27 @@ footer{
 
         & .about{
             margin-bottom: 35px;
+            @media screen and (min-width:$breakpoint) {
+                margin-bottom: 50px;
+            }
 
             & .company{
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 17px;
+                color: $cBlack;
             }
 
             & .address{
                 font-size: 12px;
+                color: $cBlack;
             }
         }
     }
     & .copy{
         padding: 0 30px;
         font-size: 12px;
+        color: $cBlack;
         @media screen and (min-width:$breakpoint) {
             max-width: $contentMaxWidth;
             margin: 0 auto;
