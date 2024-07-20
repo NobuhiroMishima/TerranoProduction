@@ -1,0 +1,130 @@
+@use "../globals/variables" as *;
+
+main{
+    & .introduction, & .stafflist{
+        margin: 43px 0 83px 0;
+        padding: 0 30px;
+        @media screen and (min-width:$breakpoint) {
+            max-width: $contentMaxWidth;
+            margin: 69px auto 126px auto;
+        }
+    
+        &__lead{
+            font-size: 13px;
+            color: $cBlack;
+            margin-bottom: 83px;
+            @media screen and (min-width:$breakpoint) {
+                margin-bottom: 98px;
+            }
+        }
+    
+        &__container{
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 24px 83px 24px;
+            @media screen and (min-width:$breakpoint) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 65px;
+            }
+    
+            & .item{
+                margin-bottom: 36px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                @media screen and (min-width:$breakpoint) {
+                    width: 28%;
+                    margin-bottom: 72px;
+                    &:nth-last-child(-n+3){
+                        margin-bottom: 0;
+                    }
+                }
+    
+                &.new{
+                    & .item__name{
+                        &::before{
+                            content: 'NEW';
+                            position: absolute;
+                            top: -24px;
+                            left: -24px;
+                            padding: 7px 0 7px 3.5px;
+                            width: 24px;
+                            height: 24px;
+                            background-color: $cYellow;
+                            border-radius: 50%;
+                            font-size: 7px;
+                        }
+                    }
+    
+                }
+    
+                &__img{
+                    display: block;
+                    width: fit-content;
+                    max-width: 210px;
+                    max-height: 210px;
+                    margin: 0 auto 37px auto;
+                    border-radius: 50%;
+                    & .image{
+                        border-radius: 50%;
+                        border: 10px solid $cBorder;
+                    }
+                }
+    
+                &__name{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $cBlack;
+                    margin-bottom: 3px;
+                    position: relative;
+                }
+    
+                &__date{
+                    font-size: 11px;
+                    color: $cBlack;
+                    margin-bottom: 8px;
+                }
+    
+                &__interview{
+                    font-size: 13px;
+                    color: $cBlack;
+                    margin-bottom: 13px;
+                }
+    
+                &__next{
+                    position: relative;
+                    font-size: 13px;
+                    color: $cBlack;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 6px;
+                        left: 72px;
+                        width: 25.5px;
+                        height: 1px;
+                        background-color: $cArrow;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 6px;
+                        left: 88px;
+                        width: 9px;
+                        height: 1px;
+                        transform: rotate(35deg);
+                        transform-origin: right;
+                        background-color: $cArrow;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
